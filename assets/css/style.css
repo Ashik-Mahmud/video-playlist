@@ -1,0 +1,52 @@
+/* stylesheets */
+
+/* google fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap');
+
+
+/* variables  */
+:root {
+    /* fonts  */
+    --philosopher: 'Philosopher', sans-serif;
+
+    /* colors  */
+    --primary-color: #1e272e;
+    --body-color: #d2dae2;
+}
+
+/* base  */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: var(--philosopher);
+    background-color: var(--body-color);
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+h1{
+    font-size: 3rem;
+}
+/* common classes */
+.cursor-pointer{
+    cursor: pointer;
+}
+.p-md{
+    padding: 1.5rem;
+}
+
+
+/* usuall stylesheets  */
+
