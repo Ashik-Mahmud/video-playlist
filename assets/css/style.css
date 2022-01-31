@@ -214,3 +214,18 @@ button.disabled{
         font-size: 1rem;
     }
 }
+@media (max-width: 650px) {
+    .video-info{
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+@media (max-width: 350px) {
+    .lists .single-video{
+        flex-direction: column;
+    }
+    .single-video video{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
