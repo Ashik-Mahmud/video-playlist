@@ -23,7 +23,7 @@
     padding: 0px;
 }
 
-body{
+body {
     font-family: var(--philosopher);
     background-color: var(--body-color);
     font-size: 16px;
@@ -32,21 +32,156 @@ body{
     justify-content: center;
     min-height: 100vh;
 }
-img{
+
+@media (max-width: 1200px) {
+    body {
+        overflow-x: hidden;
+    }
+}
+
+img {
     max-width: 100%;
     height: auto;
 }
-h1{
+
+h1 {
     font-size: 3rem;
 }
+
+video {
+    max-width: 100%;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+}
+
+@media (max-width: 1200px) {
+    main {
+        width: 100%;
+        padding: 1rem;
+    }
+}
+
 /* common classes */
-.cursor-pointer{
+.cursor-pointer {
     cursor: pointer;
 }
-.p-md{
+
+.p-md {
     padding: 1.5rem;
 }
 
 
 /* usuall stylesheets  */
 
+.video-playlist {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 2rem;
+}
+
+.video-player {
+    background-color: #fff;
+    padding: 1rem;
+    height: 100%;
+}
+
+.video-player video {
+    /* border: 3px solid #1e272e; */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+.video-player h2 {
+    margin-top: 1rem;
+}
+
+
+/* video lists  */
+
+.video-lists {
+    background-color: #fff;
+    padding: 1rem 2rem;
+    position: relative;
+}
+
+
+.list-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    margin-top: .5rem;
+    justify-content: space-between;
+}
+.list-title span{
+    display: block;
+    font-size: 1.4rem;
+    width: 40px;
+    height: 40px;
+    background: rgb(233, 233, 233);
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 50%;
+}
+.video-lists .lists {
+    position: relative;
+    max-height: 500px;
+    overflow-y: scroll;
+}
+
+.video-lists .lists::-webkit-scrollbar {
+    width: 2px;
+}
+
+.lists .single-video {
+    display: flex;
+    position: relative;
+    background-color: #e6e7e9b2;
+    margin-bottom: 1rem;
+    padding: .7rem;
+    border-radius: 4px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.lists .single-video.active {
+    background: #4863afed;
+}
+
+.single-video.active video {
+    border: 1px solid #ccc;
+}
+
+.single-video.active h2 {
+    color: #fff;
+}
+
+.single-video video {
+    width: 100px;
+    border-radius: 4px;
+}
+
+.single-video h2 {
+    margin-left: 1rem;
+    font-size: 1.3rem;
+}
+
+/* responsive  */
+@media (max-width: 1000px) {
+    .video-playlist {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1rem;
+    }
+
+    .video-lists {
+        padding: 1rem;
+    }
+
+    .single-video h2 {
+        font-size: 1rem;
+    }
+}

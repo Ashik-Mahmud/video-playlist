@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,14 +11,33 @@
     <!-- link for custom css  -->
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
-    
+
     <!-- header part start here  -->
-    <header id="header"></header>
+    <header id="header">
+        <!-- <h1>Video Playlist Application</h1> -->
+    </header>
 
 
     <!-- main part start here  -->
-    <main id="main"><h1>Video Playlist App Comming Soon...</h1></main>
+    <main id="main">
+        <section class="video-playlist">
+            <div class="video-player">
+                <video controls src=""></video>
+                <h2 class="video-title"></h2>
+            </div>
+            <div class="video-lists">
+                <div class="list-title">
+                    <h2 class="title">Video List</h2>
+                    <span class="videoCount">15</span>
+                </div>
+                <div class="lists">
+                    <!-- video lists  -->
+                </div>
+            </div>
+        </section>
+    </main>
 
 
     <!-- footer part start here  -->
@@ -28,6 +48,8 @@
 
 
     <!-- scripting for app.js  -->
+    <script src="./assets/js/videos.js"></script>
     <script src="./assets/js/app.js"></script>
 </body>
+
 </html>
