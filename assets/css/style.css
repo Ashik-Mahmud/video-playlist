@@ -97,7 +97,30 @@ main {
     border-radius: 5px;
 
 }
-
+.video-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.video-info .btns-group{
+    position: relative;
+}
+.btns-group button{
+    padding: .4rem;
+    border: none;
+    outline: none;
+    background-color: var(--body-color);
+    color: #fff;
+    font-family: var(--philosopher);
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 3px;
+}
+button.disabled{
+    pointer-events: none;
+    opacity: .7;
+}
 .video-player h2 {
     margin-top: 1rem;
 }
